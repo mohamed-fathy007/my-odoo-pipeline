@@ -6,9 +6,6 @@ jobs:
   continuous-integration:
     runs-on: self-hosted
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
-    - name: Run local test command
-      shell: powershell
-      run: |
-        echo "Hello Muhammad, Odoo pipeline is running locally on Windows!"
+    - name: Run direct local command
+      shell: cmd
+      run: echo Hello Mohamed, Odoo pipeline is running locally on Windows cmd!
