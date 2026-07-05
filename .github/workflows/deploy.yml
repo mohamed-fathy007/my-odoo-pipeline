@@ -10,4 +10,5 @@ jobs:
       uses: actions/checkout@v4
     - name: Run local test command
       shell: powershell
-      run: Write-Host "Hello Muhammad, Odoo pipeline is running locally on Windows!"
+      run: |
+        echo "Hello Muhammad, Odoo pipeline is running locally on Windows!"
