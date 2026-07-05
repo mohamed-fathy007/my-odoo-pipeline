@@ -1,4 +1,4 @@
-name:  CI-CD Production Pipeline
+name: CI-CD Production Pipeline
 on:
   push:
     branches: [ "main" ]
@@ -9,4 +9,5 @@ jobs:
     - name: Checkout Code
       uses: actions/checkout@v4
     - name: Run local test command
-      run: echo "Hello Muhammad, Odoo pipeline is running locally on your machine!"
+      shell: powershell
+      run: Write-Host "Hello Muhammad, Odoo pipeline is running locally on Windows!"
