@@ -4,7 +4,9 @@ on:
     branches: [ "main" ]
 jobs:
   continuous-integration:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Checkout Code
       uses: actions/checkout@v4
+    - name: Run local test command
+      run: echo "Hello Muhammad, Odoo pipeline is running locally on your machine!"
