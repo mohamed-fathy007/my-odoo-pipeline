@@ -1,0 +1,10 @@
+name: Odoo CI-CD Production Pipeline
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
